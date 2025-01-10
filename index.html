@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faxy</title>
+</head>
+<body>
+    <h1>Gpa calculation for 5th sem</h1>
+    <br><br>
+    <form onsubmit="calc()">
+        <label>CS2301 : </label>
+        <select name="c1" id="c1">
+            <option value="O">O</option> 
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="RA">RA</option>
+        </select><br><br>
+        <label>CS2302 : </label>
+        <select name="c2" id="c2">
+            <option value="O">O</option> 
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="RA">RA</option>
+        </select><br><br>
+        <label>CS2303 : </label>
+        <select name="c3" id="c3">
+            <option value="O">O</option> 
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="RA">RA</option>
+        </select><br><br>
+        <label>CS2304 : </label>
+        <select name="c4" id="c4">
+            <option value="O">O</option> 
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="RA">RA</option>
+        </select><br><br>
+        <label>CS2305 : </label>
+        <select name="c5" id="c5">
+            <option value="O">O</option> 
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="RA">RA</option>
+        </select><br><br>
+        <label>CS2306 : </label>
+        <select name="c6" id="c6">
+            <option value="O">O</option> 
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="RA">RA</option>
+        </select><br><br>
+        <label>CS2307 : </label>
+        <select name="c7" id="c7">
+            <option value="O">O</option> 
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="RA">RA</option>
+        </select><br><br>
+        <label>Elective1 : </label>
+        <select name="e1" id="e1">
+            <option value="O">O</option> 
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="RA">RA</option>
+        </select><br><br>
+        <label>Elective1 : </label>
+        <select name="e2" id="e2">
+            <option value="O">O</option> 
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="RA">RA</option>
+        </select><br><br>
+        <button type="submit">Check</button>
+    </form>
+</body>
+<script>
+    function calc(){
+        let a = 0.0;
+        let e1 = document.getElementById("e1").value;
+        let e2 = document.getElementById("e2").value;
+        let c1 = document.getElementById("c1").value;
+        let c2 = document.getElementById("c2").value;
+        let c3 = document.getElementById("c3").value;
+        let c4 = document.getElementById("c4").value;
+        let c5 = document.getElementById("c5").value;
+        let c6 = document.getElementById("c6").value;
+        let c7 = document.getElementById("c7").value;
+        if(e1=='O'){
+            a +=(10*3);
+        }
+        else if(e1=='A+'){
+            a +=(9*3);
+        }
+        else if(e1=='A'){
+            a +=(8*3);
+        }
+        else if(e1=='B+'){
+            a +=(7*3);
+        }
+        else if(e1=='B'){
+            a +=(6*3);
+        }
+        else if(e1=='C'){
+            a +=(5*3);
+        }
+        else if(e1=='RA'){
+            a +=(0*3);
+        }
+
+
+        if(e2=='O'){
+            a +=(10*3);
+        }
+        else if(e2=='A+'){
+            a +=(9*3);
+        }
+        else if(e2=='A'){
+            a +=(8*3);
+        }
+        else if(e2=='B+'){
+            a +=(7*3);
+        }
+        else if(e2=='B'){
+            a +=(6*3);
+        }
+        else if(e2=='C'){
+            a +=(5*3);
+        }
+        else if(e2=='RA'){
+            a +=(0*3);
+        }
+
+        if(c1=='O'){
+            a +=(10*3);
+        }
+        else if(c1=='A+'){
+            a +=(9*3);
+        }
+        else if(c1=='A'){
+            a +=(8*3);
+        }
+        else if(c1=='B+'){
+            a +=(7*3);
+        }
+        else if(c1=='B'){
+            a +=(6*3);
+        }
+        else if(c1=='C'){
+            a +=(5*3);
+        }
+        else if(c1=='RA'){
+            a +=(0*3);
+        }
+
+        if(c2=='O'){
+            a +=(10*3);
+        }
+        else if(c2=='A+'){
+            a +=(9*3);
+        }
+        else if(c2=='A'){
+            a +=(8*3);
+        }
+        else if(c2=='B+'){
+            a +=(7*3);
+        }
+        else if(c2=='B'){
+            a +=(6*3);
+        }
+        else if(c2=='C'){
+            a +=(5*3);
+        }
+        else if(c2=='RA'){
+            a +=(0*3);
+        }
+
+        if(c3=='O'){
+            a +=(10*3);
+        }
+        else if(c3=='A+'){
+            a +=(9*3);
+        }
+        else if(c3=='A'){
+            a +=(8*3);
+        }
+        else if(c3=='B+'){
+            a +=(7*3);
+        }
+        else if(c3=='B'){
+            a +=(6*3);
+        }
+        else if(c3=='C'){
+            a +=(5*3);
+        }
+        else if(c3=='RA'){
+            a +=(0*3);
+        }
+
+        if(c4=='O'){
+            a +=(10*3);
+        }
+        else if(c4=='A+'){
+            a +=(9*3);
+        }
+        else if(c4=='A'){
+            a +=(8*3);
+        }
+        else if(c4=='B+'){
+            a +=(7*3);
+        }
+        else if(c4=='B'){
+            a +=(6*3);
+        }
+        else if(c4=='C'){
+            a +=(5*3);
+        }
+        else if(c4=='RA'){
+            a +=(0*3);
+        }
+
+        if(c5=='O'){
+            a +=(10*2);
+        }
+        else if(c5=='A+'){
+            a +=(9*2);
+        }
+        else if(c5=='A'){
+            a +=(8*2);
+        }
+        else if(c5=='B+'){
+            a +=(7*2);
+        }
+        else if(c5=='B'){
+            a +=(6*2);
+        }
+        else if(c5=='C'){
+            a +=(5*2);
+        }
+        else if(c5=='RA'){
+            a +=(0*2);
+        }
+
+        if(c6=='O'){
+            a +=(10*2);
+        }
+        else if(c6=='A+'){
+            a +=(9*2);
+        }
+        else if(c6=='A'){
+            a +=(8*2);
+        }
+        else if(c6=='B+'){
+            a +=(7*2);
+        }
+        else if(c6=='B'){
+            a +=(6*2);
+        }
+        else if(c6=='C'){
+            a +=(5*2);
+        }
+        else if(c6=='RA'){
+            a +=(0*2);
+        }
+
+        if(c7=='O'){
+            a +=(10*2);
+        }
+        else if(c7=='A+'){
+            a +=(9*2);
+        }
+        else if(c7=='A'){
+            a +=(8*2);
+        }
+        else if(c7=='B+'){
+            a +=(7*2);
+        }
+        else if(c7=='B'){
+            a +=(6*2);
+        }
+        else if(c7=='C'){
+            a +=(5*2);
+        }
+        else if(c7=='RA'){
+            a +=(0*2);
+        }
+
+        let b = (a)/24.0;
+        alert(b);
+    }
+</script>
+</html>
